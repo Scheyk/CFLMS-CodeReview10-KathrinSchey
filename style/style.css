@@ -1,0 +1,44 @@
+body {
+	background-image: url("https://cdn.pixabay.com/photo/2020/07/14/20/24/pebble-5405647_1280.jpg");
+	font-family: tahoma; 
+}
+
+h1 {	
+	width: 10em;
+	color: white;
+	text-align: center;
+	background-color: #040E00;
+	margin: auto;
+}
+
+.self {
+	/* font-size: 1em; */
+	width: 20em;
+}
+
+.pic {
+	background-color: 
+}
+
+.insert {
+	width: 50em;
+	margin:  auto;
+	padding: 1%;
+	border: 2px solid;
+	border-radius: 2em;
+	background-color: rgb(1,4,108);
+	background-color: rgba(1,4,108,0.8);
+}
+
+.input {
+	width: 100%;
+}
+
+label {
+	color: white;
+}
+
+.select {
+	width: 10em;
+
+}
