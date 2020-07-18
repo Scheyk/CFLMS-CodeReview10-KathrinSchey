@@ -11,7 +11,9 @@
 			echo "success <br>
 				  <a href='../index.php'>back to übersicht</a>";
 		} else {
-			echo "something wrong";
+			echo "something wrong <br>
+				 <a href='a_delete.php'>again try delete</a>
+				 <a href='../index.php'>back to Index</a>";
 		}
 
 		$conn->close();

@@ -21,19 +21,37 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-	<nav>
-		<ul>
-			<li><a href="index.php" title="">übersicht</a></li>
-		</ul>
+	<!-- A grey horizontal navbar that becomes vertical on small screens -->
+	<nav class="navbar navbar-expand-sm bg-info sticky-top navbar-dark">	
+	  <!-- Links -->
+	  <ul class="navbar-nav">
+	    <li class="nav-item">
+	      <a class="nav-link" href="index.php">to Home</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="insert.php">to Insert</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">empty</a>
+	    </li>
+	  </ul>	
 	</nav>
 
-	<h3>are you sure?</h3>
+	
+	<div class="container">
+		
+		<div class="ask">
+			<h3>are you sure?</h3>
+		
+		<form action ="actions/a_delete.php" method="post">
+   			<input type="hidden" name="id" value="<?php echo $row['id']?>"/>
+   			<button type="submit">Yes</button >
+   			<a href="index.php" type="button">No</a>
+		</form>
+		</div>		
+	</div>
 
-	<form action ="actions/a_delete.php" method="post">
-   		<input type="hidden" name="id" value="<?php echo $row['id']?>"/>
-   		<button type="submit">Yes</button >
-   		<a href="index.php"><button type="button">No</button ></a>
-	</form>
+	
 
 
 

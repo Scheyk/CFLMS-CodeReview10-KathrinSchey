@@ -8,7 +8,7 @@
 </head>
 <body>
 	<!-- A grey horizontal navbar that becomes vertical on small screens -->
-	<nav class="navbar navbar-expand-sm bg-light">	
+	<nav class="navbar navbar-expand-sm bg-info sticky-top navbar-dark">	
 	  <!-- Links -->
 	  <ul class="navbar-nav">
 	    <li class="nav-item">
@@ -23,10 +23,15 @@
 	  </ul>	
 	</nav>
 
-	<h1>
+	
+
+	<h1 class="ueber mt-2">
 		übersicht medien
 	</h1>
-	<div class="container-fluid row justify-content-between">
+
+		<div class="container-fluid d-flex row justify-content-between">
+			
+		
 
 <?php
 	include 'actions/db_connect.php';
@@ -34,20 +39,20 @@
 	$sql = "SELECT * FROM media";
 	$go = mysqli_query($conn,$sql);
 
-	if(mysqli_num_rows($go) == 0) { //for o entries
+	if(mysqli_num_rows($go) == 0) { //for 0 entries
 		echo "no entries";
 	} elseif (mysqli_num_rows($go) == 1) { //for 1 entries
 		$row = $go->fetch_assoc();
 		echo $row["title"]." ".$row["img"]." ".$row["author"]." ".$row["isbn"]." ".$row["short_description"]." ".$row["publish_date"]." ".$row["publisher"]." ".$row["type"]."<a href='update.php?id=".$row["id"]."'>update</a> <a href='delete.php?id=".$row["id"]."'>delete</a><br>";
 	} else {
-		$rows = $go->fetch_all(MYSQLI_ASSOC);//for >1 entries
+		$rows = $go->fetch_all(MYSQLI_ASSOC);//variable for >1 entries
 
 		foreach ($rows as $key => $value) { //for >1 entries
 			
-				echo"<div class='card self m-2'>
+				echo"<div class='card self mt-2'>
 					<p>ID: ".$value["id"]."</p>
 					<div class='m-auto pic'>
-						<img class='img-fluid' src=".$value["img"]." alt='img'>
+						<img class='img-fluid rounded' src=".$value["img"]." alt='img'>
 					</div>
   					<div class='card-body'>
     					<h4 class='card-title'>".$value["title"]."</h4>

@@ -3,42 +3,62 @@ body {
 	font-family: tahoma; 
 }
 
-h1 {	
-	width: 10em;
-	color: white;
-	text-align: center;
-	background-color: #040E00;
+h1 {		
+	text-align: center;	
 	margin: auto;
+	font-weight: bold;
 }
 
-.self {
-	/* font-size: 1em; */
-	width: 20em;
+.self {	
+	width: 25em;
+	background-image: url("../img/form.jpg");
+	background-size: cover;
 }
 
-.pic {
-	background-color: 
-}
+/* .pic {
+	width: 100%;
+	margin: auto;
+} */
 
 .insert {
 	width: 50em;
 	margin:  auto;
 	padding: 1%;
-	border: 2px solid;
+	border: 2px dashed;
 	border-radius: 2em;
-	background-color: rgb(1,4,108);
-	background-color: rgba(1,4,108,0.8);
+	font-weight: bold;
 }
 
 .input {
 	width: 100%;
 }
 
-label {
-	color: white;
-}
-
 .select {
 	width: 10em;
 
+}
+
+.back {
+	width: 60em;
+	margin: auto;
+	padding: 2em;
+	background-image: url("../img/form.jpg");
+	background-size: cover;
+	border-radius: 1.5em;
+}
+
+.ueber {
+	width: 10em;
+	background-color: white;
+	border-radius: 1em;	
+}
+
+.ask {
+	width: 30em;
+	height: 30em;
+	margin: auto;
+	text-align: center;	
+	padding: 2em;
+	background-image: url("../img/form.jpg");
+	background-size: cover;
 }

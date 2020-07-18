@@ -21,11 +21,11 @@
 </head>
 <body>
 	<!-- A grey horizontal navbar that becomes vertical on small screens -->
-	<nav class="navbar navbar-expand-sm bg-light">	
+	<nav class="navbar navbar-expand-sm bg-info sticky-top navbar-dark">	
 	  <!-- Links -->
 	  <ul class="navbar-nav">
 	    <li class="nav-item">
-	      <a class="nav-link" href="index.php">back to Home</a>
+	      <a class="nav-link" href="index.php">to Home</a>
 	    </li>
 	    <li class="nav-item">
 	      <a class="nav-link" href="#">empty</a>
@@ -36,11 +36,12 @@
 	  </ul>	
 	</nav>
 
-	<div class="container-fluid">
-		<h1>update the Media</h1>
-		<div class="card">
+	<div class="container">
+				
 			
-		
+		<div class="back">
+			
+		<h1>update the Media</h1>
 		<form action="actions/a_update.php" method="post" class="insert">
 			<input type="hidden" name="id" value="<?php echo $row['id']?>">
 			<div class="input-group mb-1">
@@ -86,9 +87,9 @@
     	    	</div>
     	  	</div>
     	  	<div class="input-group mb-1">
-    	    	<label for="type">Type:</label>    	    	<
-    	    	<br>
-    	    		<select class="select"> name="type" id="type" value="<?php echo $row['type']?>">
+    	    	<label for="type">Type:</label>    	    	
+    	    	
+    	    		<select class="select" name="type" value="<?php echo $row['type']?>">
   						<option value="book">Book</option>
   						<option value="CD">CD</option>
   						<option value="DVD">DVD</option>  						

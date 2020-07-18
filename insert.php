@@ -8,11 +8,11 @@
 </head>
 <body>
 	<!-- A grey horizontal navbar that becomes vertical on small screens -->
-	<nav class="navbar navbar-expand-sm bg-light">	
+	<nav class="navbar navbar-expand-sm bg-info sticky-top navbar-dark">	
 	  <!-- Links -->
 	  <ul class="navbar-nav">
 	    <li class="nav-item">
-	      <a class="nav-link" href="index.php">back to Home</a>
+	      <a class="nav-link" href="index.php">to Home</a>
 	    </li>
 	    <li class="nav-item">
 	      <a class="nav-link" href="#">empty</a>
@@ -24,8 +24,11 @@
 	</nav>
 
 	<div class="container-fluid">
-		<h1>Insert new media!</h1>
+		
 
+    <div class="back">
+        <h1>Insert new media!</h1>
+    
 		<form action="actions/a_insert.php" method="post" class="insert">
 			<div class="input-group mb-1">
     	    	<label for="title">Title:</label>
@@ -70,10 +73,13 @@
     	    	</div>
     	  	</div>
     	  	<div class="input-group mb-1">
-    	    	<label for="type">Type:</label>
-    	    	<div class="input">
-    	      		<input type="text" class="form-control" id="type" name="type">
-    	    	</div>
+    	    	<label for="type">Type:</label>               
+                <br>
+                    <select class="select" name="type">
+                        <option value="book">Book</option>
+                        <option value="CD">CD</option>
+                        <option value="DVD">DVD</option>                        
+                    </select>
     	  	</div>
     	  	<div class="input-group">
     	    	<div class="btn m-auto">
@@ -81,7 +87,7 @@
     	    	</div>
     	  	</div>
 		</form>
-
+    </div>
 	</div>
 
 
