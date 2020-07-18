@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 17. Jul 2020 um 19:46
+-- Erstellungszeit: 18. Jul 2020 um 11:29
 -- Server-Version: 10.4.13-MariaDB
 -- PHP-Version: 7.2.32
 
@@ -46,8 +46,6 @@ CREATE TABLE `media` (
 --
 
 INSERT INTO `media` (`id`, `title`, `img`, `author`, `isbn`, `short_description`, `publish_date`, `publisher`, `type`) VALUES
-(4, 'Der blutige Pfad Gottes', 'img/pfad.jpg', 'Troy Duffy', '9614082', 'Russische Mafiagangster schießen am St. Patrick\'s Day in einem irischen Pub in South Boston um sich. Die Brüder Conor und Murphy McManus töten zwei von ihnen und werden dadurch über Nacht zu Helden in', '1999-01-22', 'Alive - Vertrieb und Marketing', 'DVD'),
-(6, 'Birds of Prey: The Emancipation of Harley Quinn', 'img/quinn.jpg', 'Christina Hodson', '1773406', 'Kennst du den mit dem Cop, dem Singvogel, dem Psychopathen und der Mafiaprinzessin? „Birds of Prey: The Emancipation of Harley Quinn“ ist eine verschlungene Geschichte, erzählt von Harley selbst, wie ', '2020-07-09', 'Warner Bros. Entertainment', 'DVD'),
 (8, 'Liebe ist für alle da', 'img/rammstein.jpg', 'Rammstein', '0602527195124', 'Musik Album', '2009-10-16', 'Jacob Hellner', 'CD'),
 (9, 'Die Geschichte der O', 'img/o.jpg', 'Anne Cécile Desclos', '4260090986356', 'Die junge, schöne O wird von ihrem Geliebten René zu einem Ausflug auf das Schloss Roissy überredet, wo sie in der Kunst der „Disziplinierung“ unterwiesen wird.', '1975-08-28', 'Filmconfect Home Entertainment GmbH (Rough Trade)', 'DVD'),
 (10, 'Clockwork Orange', 'img/clock.jpg', 'Anthony Burgess', '9783150198971', 'Alex und seine Gang üben sich in exzessiver Gewalt gegen Wehrlose. Man verhaftet Alex und sperrt ihn ein. Er wird einem grausamen Verfahren unterzogen, das ihn wieder gesellschaftsfähig machen soll.', '2014-05-23', 'Reclam, Philipp', 'book'),
@@ -57,7 +55,9 @@ INSERT INTO `media` (`id`, `title`, `img`, `author`, `isbn`, `short_description`
 (14, 'An Acoustic Evening at the Vienna Opera', 'img/joe.jpg', 'Joe Bonamassa', '8712725740360', 'Musik', '2013-03-22', 'Mascot Records (rough trade)', 'CD'),
 (15, 'Hotel Transsilvanien', 'img/hotel.jpg', 'Peter Baynham, Robert Smigel, Todd Durham, Dan Hageman,', '4030521730250', 'Um seine Tochter vor Knoblauchzehen, Silberkugeln und Holzpfählen zu beschützen, überlegt sich Blutsauger Dracula einen ganz speziellen Plan.', '2013-03-07', 'Sony Pictures Home Entertainment', 'DVD'),
 (16, 'Der Zombie Survival Guide', 'img/zombie.jpg', 'Max Brooks', '9783442474233', 'Der Zombie Survival Guide – Überleben unter Untoten ist ein 2003 veröffentlichter humoristischer und apokalyptischer fiktiver Ratgeber von Max Brooks, der ein Überleben während einer Zombie-Epidemie u', '2010-10-18', 'Goldmann Verlag', 'book'),
-(17, 'Gib dem Affen Zucker', 'img/affe.jpg', 'Adriano Celentano', '4020628846046', 'Prinzessin Cristina reist mit ihrer Familie zu einem Staatsbesuch nach Rom. Um dort am richtigen Leben teilhaben zu können, setzt sie sich von ihrer Familie ab und steigt in einen Bus der Linie 29.', '2017-12-07', 'Koch Media GmbH - DVD', 'DVD');
+(17, 'Gib dem Affen Zucker', 'img/affe.jpg', 'Adriano Celentano', '4020628846046', 'Prinzessin Cristina reist mit ihrer Familie zu einem Staatsbesuch nach Rom. Um dort am richtigen Leben teilhaben zu können, setzt sie sich von ihrer Familie ab und steigt in einen Bus der Linie 29.', '2017-12-07', 'Koch Media GmbH - DVD', 'DVD'),
+(18, 'Der blutige Pfad Gottes', 'img/pfad.jpg', '‎Troy Duffy', '9614082', 'Russische Mafiagangster schießen am St. Patrick\'s Day in einem irischen Pub in South Boston um sich. Die Brüder Conor und Murphy McManus töten zwei von ihnen und werden dadurch über Nacht zu Helden in', '1999-01-22', ' Alive - Vertrieb und Marketing', 'DVD'),
+(19, 'Birds of Prey: The Emancipation of Harley Quinn', 'img/quinn.jpg', 'Christina Hodson', '1773406', 'Kennst du den mit dem Cop, dem Singvogel, dem Psychopathen und der Mafiaprinzessin? „Birds of Prey: The Emancipation of Harley Quinn“ ist eine verschlungene Geschichte, erzählt von Harley selbst, wie ', '2020-02-05', 'Warner Bros. Entertainment', 'DVD');
 
 --
 -- Indizes der exportierten Tabellen
@@ -77,7 +77,7 @@ ALTER TABLE `media`
 -- AUTO_INCREMENT für Tabelle `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
