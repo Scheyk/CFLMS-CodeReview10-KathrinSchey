@@ -8,12 +8,12 @@
 		$sql = "DELETE FROM `media` WHERE id=$id";
 
 		if(mysqli_query($conn, $sql)) {
-			echo "success <br>
-				  <a href='../index.php'>back to übersicht</a>";
+			echo "<p class='actions'>success <br>
+				  <a href='../index.php'>back to übersicht</a></p>";
 		} else {
-			echo "something wrong <br>
-				 <a href='a_delete.php'>again try delete</a>
-				 <a href='../index.php'>back to Index</a>";
+			echo "<p class='actions'>something wrong <br>
+				 <a href='a_delete.php'>try again</a>
+				 <a href='../index.php'>back to Index</a></p>";
 		}
 
 		$conn->close();

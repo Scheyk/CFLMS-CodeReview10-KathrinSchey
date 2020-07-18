@@ -17,6 +17,8 @@
 			echo "success <br>
 				  <a href='../index.php'>übersicht media</a>";
 		} else {
-			echo "some goes wrong" .$conn->error;
+			echo "some goes wrong <br>
+				 <a href='a_insert.php'>try again</a>
+				 <a href='../index.php'>back to Index</a>";
 		}
 ?>

@@ -7,12 +7,15 @@ h1 {
 	text-align: center;	
 	margin: auto;
 	font-weight: bold;
+	color: white;
 }
 
 .self {	
-	width: 25em;
-	background-image: url("../img/form.jpg");
+	width: 20em;
+	background-image: url("https://media.istockphoto.com/photos/white-wood-wall-texture-and-backgroud-picture-id1152859422?b=1&k=6&m=1152859422&s=170667a&w=0&h=rcmnBZIP5LiXIg_FCS2SupYdponxC-cU9MP7ClgTyo4=");
 	background-size: cover;
+	font-weight: bold;
+	
 }
 
 /* .pic {
@@ -27,10 +30,11 @@ h1 {
 	border: 2px dashed;
 	border-radius: 2em;
 	font-weight: bold;
+	color: white;
 }
 
 .input {
-	width: 100%;
+	width: 100%;	
 }
 
 .select {
@@ -42,7 +46,7 @@ h1 {
 	width: 60em;
 	margin: auto;
 	padding: 2em;
-	background-image: url("../img/form.jpg");
+	background-image: url("https://media.istockphoto.com/photos/old-wooden-floor-background-picture-id1161602380?b=1&k=6&m=1161602380&s=170667a&w=0&h=rLZV5Ow0IObKPRef7XhY9w4KrLfjNRx_t2bGgGVlh5c=");
 	background-size: cover;
 	border-radius: 1.5em;
 }
@@ -50,15 +54,40 @@ h1 {
 .ueber {
 	width: 10em;
 	background-color: white;
-	border-radius: 1em;	
+	border-radius: 1em;
+	color: black;	
 }
 
 .ask {
-	width: 30em;
-	height: 30em;
+	width: 30em;	
 	margin: auto;
 	text-align: center;	
-	padding: 2em;
+	padding: 2%;
 	background-image: url("../img/form.jpg");
 	background-size: cover;
+}
+
+.btn_y {
+	width: 8em;
+	height: 8em;
+	background-image: url("https://cdn.pixabay.com/photo/2019/02/19/19/45/thumbs-up-4007573__340.png");
+	background-size: 100% 100%;
+}
+
+.btn_n {
+	width: 8em;
+	height: 8em;
+	background-image: url("https://cdn.pixabay.com/photo/2020/03/26/03/09/not-4969057__340.png");
+	background-size: 100% 100%;
+}
+
+textarea { 
+    resize: none;
+    overflow: auto;
+}
+
+.actions {
+	width: 30em;
+	margin: auto;	
+	font-size: 8em;
 }
